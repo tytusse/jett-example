@@ -18,6 +18,10 @@ import com.github.k3286.dto.AnalysisData;
 
 public class ReportMakerTest {
 
+    /**
+     * ピボットテーブルの出力デモ
+     * @throws Exception
+     */
     @Test
     public void report_test() throws Exception {
 
@@ -46,7 +50,7 @@ public class ReportMakerTest {
         // 帳票変換
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("datas", datas);
-        Workbook workbook = ReportMaker.toReport(map);
+        Workbook workbook = ReportMaker.toReport(map, "template.xlsx");
 
         // ファイル出力
         final String outPath = "output.xlsx";

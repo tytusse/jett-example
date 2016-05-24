@@ -4,7 +4,6 @@
 	<artifactId>jett-example</artifactId>
 	<modelVersion>4.0.0</modelVersion>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<build>
 		<finalName>jett-example</finalName>
@@ -38,7 +37,7 @@
  		<dependency>
  			<groupId>net.sf.jett</groupId>
  			<artifactId>jett-core</artifactId>
- 			<version>0.9.1</version>
+ 			<version>0.10.0</version>
  		</dependency>
  	</dependencies>
 
