@@ -15,7 +15,7 @@ public class InvoiceDetail {
     private BigDecimal unitCost;
 
     /** 数量 */
-    private double quantity;
+    private Double quantity;
 
     /** 金額 */
     private BigDecimal amt;
@@ -51,14 +51,14 @@ public class InvoiceDetail {
     /**
      * @return quantityを取得する
      */
-    public double getQuantity() {
+    public Double getQuantity() {
         return quantity;
     }
 
     /**
      * @param quantityを設定する
      */
-    public void setQuantity(double quantity) {
+    public void setQuantity(Double quantity) {
         this.quantity = quantity;
     }
 

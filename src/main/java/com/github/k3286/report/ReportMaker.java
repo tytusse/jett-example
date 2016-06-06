@@ -12,10 +12,10 @@ import net.sf.jett.transform.ExcelTransformer;
 public class ReportMaker {
 
     /**
-     *
-     * @param params
-     * @param templateName
-     * @return
+     * パラメータと、テンプレートファイル名を指定し、帳票変換を行う
+     * @param params パラメータ
+     * @param templateName テンプレートファイル名
+     * @return 変換したWorkbook
      */
     public static Workbook toReport(Map<String, Object> params, String templateName) {
         Workbook workbook = null;

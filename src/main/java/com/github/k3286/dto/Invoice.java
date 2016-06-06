@@ -17,6 +17,12 @@ public class Invoice {
     /** 請求No. */
     private String invoiceNo;
 
+    /** 顧客住所 */
+    private String clientAddress;
+
+    /** 顧客郵便番号 */
+    private String clientPostCode;
+
     /** 顧客名 */
     private String clientName;
 
@@ -31,6 +37,9 @@ public class Invoice {
 
     /** 税額 */
     private BigDecimal taxAmt;
+
+    /** 備考 */
+    private String note;
 
     /** 明細 */
     private List<InvoiceDetail> details = new ArrayList<InvoiceDetail>();
@@ -145,6 +154,48 @@ public class Invoice {
      */
     public void setDetails(List<InvoiceDetail> details) {
         this.details = details;
+    }
+
+    /**
+     * @return clientAddressを取得する
+     */
+    public String getClientAddress() {
+        return clientAddress;
+    }
+
+    /**
+     * @param clientAddressを設定する
+     */
+    public void setClientAddress(String clientAddress) {
+        this.clientAddress = clientAddress;
+    }
+
+    /**
+     * @return clientPostCodeを取得する
+     */
+    public String getClientPostCode() {
+        return clientPostCode;
+    }
+
+    /**
+     * @param clientPostCodeを設定する
+     */
+    public void setClientPostCode(String clientPostCode) {
+        this.clientPostCode = clientPostCode;
+    }
+
+    /**
+     * @return noteを取得する
+     */
+    public String getNote() {
+        return note;
+    }
+
+    /**
+     * @param noteを設定する
+     */
+    public void setNote(String note) {
+        this.note = note;
     }
 
 }
