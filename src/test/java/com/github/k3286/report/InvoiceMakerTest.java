@@ -38,7 +38,8 @@ public class InvoiceMakerTest {
             dtl.setItemName("サンプル明細ですよ " + idx);
             dtl.setUnitCost(BigDecimal.valueOf(10000));
             dtl.setQuantity(Double.valueOf(idx));
-            dtl.setAmt(dtl.getUnitCost().multiply(BigDecimal.valueOf(dtl.getQuantity())));
+            dtl.setAmt(dtl.getUnitCost().multiply(//
+                    BigDecimal.valueOf(dtl.getQuantity())));
             inv.getDetails().add(dtl);
         }
         BigDecimal total = BigDecimal.ZERO;
